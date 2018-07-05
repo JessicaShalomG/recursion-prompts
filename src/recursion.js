@@ -91,18 +91,19 @@ if(exp ===0){
 return base * exponent(base, exp-1);
 };
 
-
 // 8. Determine if a number is a power of two.
 // powerOfTwo(1); // true
 // powerOfTwo(16); // true
 // powerOfTwo(10); // false
 var powerOfTwo = function(n) {
-
-
 };
 
 // 9. Write a function that reverses a string.
 var reverse = function(string) {
+  if (string === '') {
+    return '';
+  }
+  return reverse(string.substr(1)) + string[0];
 };
 
 // 10. Write a function that determines if a string is a palindrome.
